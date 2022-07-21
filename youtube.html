@@ -18,14 +18,11 @@
       }
       .search-bar
       {
-        font-size: 20px;
         display: block;
-        margin-bottom: 20px;
       }
       .thumbnail
       {
-        width: 300px;
-        display: block;
+        width: 100%;
       }
       .video-title{
         margin-top: 0;
@@ -34,20 +31,10 @@
         line-height: 20px;
         margin-bottom: 12px;
       }
-      .video-preview{
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 15px;
-      }
-      .channel-picture{
-        display: inline-block ;
-        width: 50px;
-        vertical-align: top;
-      }
-      .video-info{
-        display: inline-block ;
-        width: 200px;
+      
+      .video-info-grid{
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
       .profile-picture
       {
@@ -67,7 +54,12 @@
       .video-author{
         margin-bottom: 12px;;
       }
-      
+      .video-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 35px;
+      }
       
     </style>
   </head>
@@ -76,67 +68,189 @@
 
     <input class="search-bar" type="text" placeholder="Search">
 
-    <div class="video-preview">
+    <div class="video-grid">
 
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="./thumbnails/image1.jpg">
-      </div>
+      <div class="video-preview">
 
-      <div>
-
-        <div class="channel-picture">
-          <img class="profile-picture" 
-              src="./channel-pictures/channel1.jpg">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="./thumbnails/image1.webp">
         </div>
 
-        <div class="video-info">
-          <p class="video-title">
-            Sen TenZ Turned On Raw Input Buffer & This Happened
-          </p>
-    
-          <p class="video-author">
-            Manu Rauca
-          </p>
-    
-          <p class="video-stats">
-            124 K de vizionări &#183; acum 23 de ore
-          </p>
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" 
+                src="./channel-pictures/channel1.jpg">
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              Sen TenZ Turned On Raw Input Buffer & This Happened
+            </p>
+      
+            <p class="video-author">
+              Manu Rauca
+            </p>
+      
+            <p class="video-stats">
+              124 K de vizionări &#183; acum 23 de ore
+            </p>
+          </div>
+
+        </div>
+      
+      </div>
+      <div class="video-preview">
+
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="./thumbnails/image2.webp">
         </div>
 
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" 
+                src="./channel-pictures/channel2.jpg">
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              Magnus Carlsen on takes Bassem Amin
+            </p>
+      
+            <p class="video-author">
+              ChessBase India
+            </p>
+      
+            <p class="video-stats">
+              501 K de vizionări &#183; acum 4 zile
+            </p>
+          </div>
+
+        </div>
+      
       </div>
-    
+      <div class="video-preview">
+
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="./thumbnails/image3.webp">
+        </div>
+
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" 
+                src="./channel-pictures/channel3.jpg">
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              Is THIS the Hisuian Event Ultra Unlock?
+            </p>
+      
+            <p class="video-author">
+              Trainer Tips
+            </p>
+      
+            <p class="video-stats">
+              29 K de vizionări &#183; acum 4 de ore
+            </p>
+          </div>
+
+        </div>
+      
+      </div>
+      <div class="video-preview">
+
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="./thumbnails/image4.webp">
+        </div>
+
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" 
+                src="./channel-pictures/channel4.jpg">
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              "NEVER Mess With An ALPHA MAN!" - Jordan Peterson Advice
+            </p>
+      
+            <p class="video-author">
+              TheMentor
+            </p>
+      
+            <p class="video-stats">
+              308 de vizionări &#183; acum 4 ore
+            </p>
+          </div>
+
+        </div>
+      
+      </div>
+      <div class="video-preview">
+
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="./thumbnails/image5.webp">
+        </div>
+
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" 
+                src="./channel-pictures/channel5.jpg">
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              Can I Beat the Best Geoguessr Player in the World if I Cheat?
+            </p>
+      
+            <p class="video-author">
+              Ludwig
+            </p>
+      
+            <p class="video-stats">
+              838 K de vizionări &#183; acum 1 zi
+            </p>
+          </div>
+
+        </div>
+      
+      </div>
+      <div class="video-preview">
+
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="./thumbnails/image6.webp">
+        </div>
+
+        <div class="video-info-grid">
+
+          <div class="channel-picture">
+            <img class="profile-picture" 
+                src="./channel-pictures/channel6.jpg">
+          </div>
+
+          <div class="video-info">
+            <p class="video-title">
+              Can you beat me at a CSS Battle?
+            </p>
+      
+            <p class="video-author">
+              Kevin Powell
+            </p>
+      
+            <p class="video-stats">
+              221 K de vizionări &#183; acum 3 săptămâni
+            </p>
+          </div>
+
+        </div>
+      
+      </div>
+
     </div>
-
-    <div class="video-preview">
-
-      <div class="thumbnail-row">
-        <img class="thumbnail" src="./thumbnails/image2.webp">
-      </div>
-
-      <div>
-
-        <div class="channel-picture">
-          <img class="profile-picture" 
-              src="./channel-pictures/channel2.jpg">
-        </div>
-
-        <div class="video-info">
-          <p class="video-title">
-            Magnus Carlsen on takes Bassem Amin
-          </p>
-    
-          <p class="video-author">
-            ChessBase India
-          </p>
-    
-          <p class="video-stats">
-            501 K de vizionări &#183; acum 4 zile
-          </p>
-        </div>
-
-      </div>
-    
-    </div>
-
   </body>
 </html>
