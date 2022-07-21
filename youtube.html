@@ -2,26 +2,35 @@
 <html>
 
   <head>
-    <title>Youtube.com clone</title>
+    <title>
+      Youtube.com clone
+    </title>
     <style>
+      .search-bar
+      {
+        font-size: 20px;
+        display: block;
+        margin-bottom: 20px;
+      }
       .thumbnail
       {
         width: 300px;
         display: block;
       }
-      .search-bar
-      {
-        font-size: 20px;
-        /* margin-left: 12px; */
-      }
       .video-title
       {
         width: 300px;
       }
-      .video-author,
+      /* .video-author,
       .video-stats
       {
         
+      } */
+      .video-preview{
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
       }
     </style>
   </head>
@@ -30,20 +39,39 @@
 
     <input class="search-bar" type="text" placeholder="Search">
 
-    <img class="thumbnail" src="thumbnails/image1.jpg">
+    <div class="video-preview">
+    
+      <img class="thumbnail" src="thumbnails/image1.jpg">
 
-    <p class="video-title">
-      Sen TenZ Turned On Raw Input Buffer & This Happened
-    </p>
+      <p class="video-title">
+        Sen TenZ Turned On Raw Input Buffer & This Happened
+      </p>
 
-    <p class="video-author">
-      Manu Rauca
-    </p>
+      <p class="video-author">
+        Manu Rauca
+      </p>
 
-    <p class="video-stats">
-      124 K de vizionări &#183; acum 23 de ore
-    </p>
+      <p class="video-stats">
+        124 K de vizionări &#183; acum 23 de ore
+      </p>
+    </div>
+
+    <div class="video-preview">
+    
+      <img class="thumbnail" src="thumbnails/image2.webp">
+
+      <p class="video-title">
+        Magnus Carlsen takes Bassem Amin
+      </p>
+
+      <p class="video-author">
+        ChessBase India
+      </p>
+
+      <p class="video-stats">
+        501 K de vizionări &#183; acum 4 zile
+      </p>
+    </div>
 
   </body>
-
 </html>
