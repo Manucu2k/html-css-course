@@ -5,7 +5,17 @@
     <title>
       Youtube.com clone
     </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
     <style>
+      p{
+        font-family: Roboto, Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
       .search-bar
       {
         font-size: 20px;
@@ -17,21 +27,48 @@
         width: 300px;
         display: block;
       }
-      .video-title
-      {
-        width: 300px;
+      .video-title{
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 12px;
       }
-      /* .video-author,
-      .video-stats
-      {
-        
-      } */
       .video-preview{
         width: 300px;
         display: inline-block;
         vertical-align: top;
         margin-right: 15px;
       }
+      .channel-picture{
+        display: inline-block ;
+        width: 50px;
+        vertical-align: top;
+      }
+      .video-info{
+        display: inline-block ;
+        width: 200px;
+      }
+      .profile-picture
+      {
+        width: 40px;
+        border-radius: 50px;
+      }
+      .thumbnail-row
+      {
+        margin-bottom: 12px;
+      }
+
+      .video-author,
+      .video-stats{
+        font-size: 12px;
+        color: rgb(96, 96, 96);
+      }
+      .video-author{
+        margin-bottom: 12px;;
+      }
+      
+      
     </style>
   </head>
 
@@ -40,37 +77,65 @@
     <input class="search-bar" type="text" placeholder="Search">
 
     <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="./thumbnails/image1.jpg">
+      </div>
+
+      <div>
+
+        <div class="channel-picture">
+          <img class="profile-picture" 
+              src="./channel-pictures/channel1.jpg">
+        </div>
+
+        <div class="video-info">
+          <p class="video-title">
+            Sen TenZ Turned On Raw Input Buffer & This Happened
+          </p>
     
-      <img class="thumbnail" src="thumbnails/image1.jpg">
+          <p class="video-author">
+            Manu Rauca
+          </p>
+    
+          <p class="video-stats">
+            124 K de vizionări &#183; acum 23 de ore
+          </p>
+        </div>
 
-      <p class="video-title">
-        Sen TenZ Turned On Raw Input Buffer & This Happened
-      </p>
-
-      <p class="video-author">
-        Manu Rauca
-      </p>
-
-      <p class="video-stats">
-        124 K de vizionări &#183; acum 23 de ore
-      </p>
+      </div>
+    
     </div>
 
     <div class="video-preview">
+
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="./thumbnails/image2.webp">
+      </div>
+
+      <div>
+
+        <div class="channel-picture">
+          <img class="profile-picture" 
+              src="./channel-pictures/channel2.jpg">
+        </div>
+
+        <div class="video-info">
+          <p class="video-title">
+            Magnus Carlsen on takes Bassem Amin
+          </p>
     
-      <img class="thumbnail" src="thumbnails/image2.webp">
+          <p class="video-author">
+            ChessBase India
+          </p>
+    
+          <p class="video-stats">
+            501 K de vizionări &#183; acum 4 zile
+          </p>
+        </div>
 
-      <p class="video-title">
-        Magnus Carlsen takes Bassem Amin
-      </p>
-
-      <p class="video-author">
-        ChessBase India
-      </p>
-
-      <p class="video-stats">
-        501 K de vizionări &#183; acum 4 zile
-      </p>
+      </div>
+    
     </div>
 
   </body>
